@@ -36,3 +36,10 @@ podman stop terminal-fun
 podman rm cli
 podman rmi "$(podman images terminal-fun --all --quiet)"
 ```
+
+## To Do
+
+- publish to dockerhub
+- create a gif to demonstrate
+- fix a jp2a display bug
+- make a more serious mode
