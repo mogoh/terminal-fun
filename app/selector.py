@@ -103,18 +103,23 @@ def jp2a(timeout=60):
             return
 
 
+def world_map(timeout=60):
+    os.system('clear')
+    run(["jp2a", "--colors", "--clear", "--term-fit", "/app/world_map.jpg"])
+    sleep(10)
+
+
 def random_process(timeout=60):
     plist = [
         asciiquarium,
-        #bmon,
         cbonsai,
         cmatrix,
         cowfortune,
         lavat,
         pipes,
         code,
-        #htop,
-        jp2a
+        jp2a,
+        world_map,
     ]
     return choice(plist)(timeout=timeout)
 
